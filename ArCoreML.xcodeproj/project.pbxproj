@@ -15,6 +15,8 @@
 		705D82941F86F7A50014565F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 705D82921F86F7A50014565F /* LaunchScreen.storyboard */; };
 		705D829F1F86F7A50014565F /* ArCoreMLTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 705D829E1F86F7A50014565F /* ArCoreMLTests.swift */; };
 		705D82AA1F86F7A50014565F /* ArCoreMLUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 705D82A91F86F7A50014565F /* ArCoreMLUITests.swift */; };
+		705D82B81F86F8320014565F /* Resnet50.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = 705D82B71F86F82F0014565F /* Resnet50.mlmodel */; };
+		705D82BA1F874B9B0014565F /* VGG16.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = 705D82B91F874B920014565F /* VGG16.mlmodel */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +51,8 @@
 		705D82A51F86F7A50014565F /* ArCoreMLUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ArCoreMLUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		705D82A91F86F7A50014565F /* ArCoreMLUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArCoreMLUITests.swift; sourceTree = "<group>"; };
 		705D82AB1F86F7A50014565F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		705D82B71F86F82F0014565F /* Resnet50.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = Resnet50.mlmodel; sourceTree = "<group>"; };
+		705D82B91F874B920014565F /* VGG16.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = VGG16.mlmodel; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -102,6 +106,8 @@
 				705D82871F86F7A50014565F /* AppDelegate.swift */,
 				705D82891F86F7A50014565F /* art.scnassets */,
 				705D828B1F86F7A50014565F /* ViewController.swift */,
+				705D82B71F86F82F0014565F /* Resnet50.mlmodel */,
+				705D82B91F874B920014565F /* VGG16.mlmodel */,
 				705D828D1F86F7A50014565F /* Main.storyboard */,
 				705D82901F86F7A50014565F /* Assets.xcassets */,
 				705D82921F86F7A50014565F /* LaunchScreen.storyboard */,
@@ -263,7 +269,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				705D82BA1F874B9B0014565F /* VGG16.mlmodel in Sources */,
 				705D828C1F86F7A50014565F /* ViewController.swift in Sources */,
+				705D82B81F86F8320014565F /* Resnet50.mlmodel in Sources */,
 				705D82881F86F7A50014565F /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -431,6 +439,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = X8J5HT4M6B;
 				INFOPLIST_FILE = ArCoreML/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.samp.ArCoreML;
@@ -445,6 +454,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = X8J5HT4M6B;
 				INFOPLIST_FILE = ArCoreML/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.samp.ArCoreML;
